@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Library App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        
+        
+        <main>
+            <header>
+                <h1>Library</h1>
+                <button onclick="toggleNewBookForm()"><strong>NEW BOOK</strong></button>
+            </header>
+            <div class="bookform">
+                <form onsubmit="processBookForm()">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title"><br>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author"><br>
+                    <label for="pages"># Pages:</label>
+                    <input type="number" id="pages"><br>
+                    <label for="read">Has been read</label>
+                    <input type="checkbox" id="read" name="read" value="Read"><br><br>
+                    <input id="form-submit" type="submit" value="Submit">
+                </form>
+            </div>
+            <div id="wrapper">
+                <article class="book">
+                    <button>Read</button>
+                    <button>Remove</button>
+                    <p><strong>book 1 has a really long title with more words than you can imagine</strong></p>
+                    <p>by <span>firstname lastname</span></p>
+                </article>
+                <article class="book">
+                    <button>Read</button>
+                    <button>Remove</button>
+                    <p>book 2</p>
+                    <p>by <span>person with a long name</span></p></article>
+                <article class="book">book 3</article>
+                <article class="book">book 4</article>
+                <article class="book">book 5</article>
+                <article class="book">book 6</article>
+            </div>
+            <footer>
+                by liam
+            </footer>
+        </main>
+        
+        <script src="app.js" ajax defer></script>
+    </body>
+</html>
